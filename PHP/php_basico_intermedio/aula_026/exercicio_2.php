@@ -8,3 +8,6 @@
 
         Resultado: 200
     */
+
+    $numero = 50;
+    echo 50 * 4;

@@ -20,7 +20,11 @@
 </head>
 <body>
 
-    
+    <ul>
+        <li><?php echo $produtos[0] ?></li>
+        <li><?php echo $produtos[1] ?></li>
+        <li><?php echo $produtos[2] ?></li>
+    </ul>
 
 </body>
 </html>

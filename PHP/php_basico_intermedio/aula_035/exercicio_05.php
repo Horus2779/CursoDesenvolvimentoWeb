@@ -25,12 +25,13 @@
     <title>Exercício 5</title>
 </head>
 <body>
-
-        <h3><!-- nome da cidade (se existe) --></h3>
-        <p><!-- email da loja da cidade (se existe) --></p>
-
-        <!-- quando não existe cidade na coleção das $lojas -->
+    
+    <?php if(array_key_exists($cidade, $lojas)) : ?>
+        <h3>Existe uma loja em <?= $cidade ?></h3>
+        <p>Email para contato da cidade de <?= $cidade ?>: <?= $lojas[$cidade]?></p>
+    <?php else : ?>
         <p>Não existe nenhuma loja na cidade indicada.</p>
+    <?php endif; ?>
 
 </body>
 </html>

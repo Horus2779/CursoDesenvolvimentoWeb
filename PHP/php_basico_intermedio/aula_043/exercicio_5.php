@@ -21,7 +21,9 @@
 </head>
 <body>
     
-    
+    <?php for($i = 10; $i >= 0; $i--) : ?>
+        <p style="opacity: <?= $i/10 ?>;"><?= $frase ?></p>
+    <?php endfor; ?>
 
 </body>
 </html>

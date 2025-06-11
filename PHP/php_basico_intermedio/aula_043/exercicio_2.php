@@ -5,6 +5,12 @@
     2. Apresenta os dados do array com um ciclo foreach (apenas os valores)
     */
 
+    $tabuada = [];
+
+    for($i = 1; $i <= 10; $i++){
+        $tabuada[] = $i * 327;
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +22,9 @@
 </head>
 <body>
     
-    
+    <?php foreach($tabuada as $resultado): ?>
+        <h2><?= $resultado ?></h2>
+    <?php endforeach; ?>
 
 </body>
 </html>

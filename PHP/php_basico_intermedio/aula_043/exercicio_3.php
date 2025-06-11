@@ -6,6 +6,8 @@
 
     $nomes = ['joao', 'ana', 'carlos', 'marco', 'maria', 'silvia', 'helena', 'ricardo'];
 
+    $ignorar = $nomes[4]
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +19,10 @@
 </head>
 <body>
     
+    <?php foreach($nomes as $nome): ?>
+        <?php if($nome == $ignorar) continue ?>
+        <h2><?= $nome ?></h2>
+    <?php endforeach; ?>
     
 
 </body>

@@ -8,7 +8,17 @@
       aparecer a mensagem 'SUCESSO'.
     */
 
-    $mensagem_erro = '';
+    $mensagem_erro = 'teste';
+
+    $css = '';
+    $mensagem = null;
+    if(!empty($mensagem_erro)){
+        $css = 'erro';
+        $mensagem = $mensagem_erro;
+    } else {
+        $css = 'sucesso';
+        $mensagem = 'SUCESSO';
+    }
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +41,14 @@
 </head>
 <body>
 
-    
+    <p class="<?= $css ?>"><?= $mensagem ?></p>
 
+    <!--
+    <?php if($mensagem_erro == '') : ?>
+        <p class="sucesso">SUCESSO</p>
+    <?php else : ?>
+        <p class="erro"><?= $mensagem_erro ?></p>
+    <?php endif; ?>
+    -->
 </body>
 </html>

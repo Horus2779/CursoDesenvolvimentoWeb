@@ -6,6 +6,7 @@
     */
 
     $produtos = ['laranja', 'arroz', 'batata', 'feijão', 'castanha'];
+    sort($produtos, SORT_STRING);
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +19,13 @@
 </head>
 <body>
     
+    <ul>
+        <li><?= $produtos[0] ?></li>
+        <li><?= $produtos[1] ?></li>
+        <li><?= $produtos[2] ?></li>
+        <li><?= $produtos[3] ?></li>
+        <li><?= $produtos[4] ?></li>
+    </ul>
     
 
 </body>
