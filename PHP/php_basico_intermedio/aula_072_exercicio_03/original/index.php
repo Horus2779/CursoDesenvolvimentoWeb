@@ -2,6 +2,14 @@
 
 // criar a função aqui ...
 
+function dividir($v1, $v2){
+    if($v2 == 0){
+        return null;
+    }
+    return $v1/$v2;
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +29,11 @@
         <?php 
             $valor1 = rand(0,10);
             $valor2 = rand(0,10);
+            $resultado = dividir($valor1, $valor2);
         ?>
 
-        <!-- apresentar os valores aqui -->
+        <h1>Resultado</h1>
+        <h3><?= "$valor1 / $valor2 = " . $resultado === null ? "Divisão por Zero" : $resultado?></h3>
 
     <?php endfor; ?>
 
